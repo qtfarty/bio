@@ -1,10 +1,3 @@
-# To- Do list for myself
-- [] make this profile multilingual (https://chat.openai.com/share/636ff953-203c-445e-85ac-fec389508794)
-
-# Icon Reference
-- link icon font list ()
-- SVG for social media icons (https://fontawesome.com/icons/)
-
 
 # customization note
 ### Originally Remixed From
