@@ -1,0 +1,337 @@
+/* * {
+   cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFGmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDYgNzkuMTY0NjQ4LCAyMDIxLzAxLzEyLTE1OjUyOjI5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjIuMiAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjEtMDMtMDRUMTY6Mzc6NDUtMDU6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIxLTAzLTA0VDE2OjM5OjMyLTA1OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIxLTAzLTA0VDE2OjM5OjMyLTA1OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjkwZDMzNzUzLTAwOGEtNDE1NS04MTc1LTIwZjkwZWYxOTdiYyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5MGQzMzc1My0wMDhhLTQxNTUtODE3NS0yMGY5MGVmMTk3YmMiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5MGQzMzc1My0wMDhhLTQxNTUtODE3NS0yMGY5MGVmMTk3YmMiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjkwZDMzNzUzLTAwOGEtNDE1NS04MTc1LTIwZjkwZWYxOTdiYyIgc3RFdnQ6d2hlbj0iMjAyMS0wMy0wNFQxNjozNzo0NS0wNTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjIgKE1hY2ludG9zaCkiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/umE5AAAAHJJREFUOI3NlEEOwCAIBN3G/3+ZHpptCJEqhhL3pgiMgEJEpG0IAEb7106wL3WVMeTIm1nSdMLzA/b5kUd2GMq6vBwQwNIk1NWQNbNUXJfN4bTLUdJ6QmZWJNbetD2d8E1n/0XvJXikdP+PMCrvp08nvAEeozA6rI9ZhQAAAABJRU5ErkJggg==), auto;
+} */
+
+/******************************************************************************
+TIP: This is the default style sheet for the site
+
+- Your selected theme will also affect how the page appears
+- Themes are in the /themes folder
+- Select a theme in settings.json as the `theme` property
+******************************************************************************/
+
+/******************************************************************************
+START Page structure and element resets
+******************************************************************************/
+
+/* A set of default style */
+:root {
+  /* Generic sizing for the page */
+  --wrapper-height: 80vh;
+  --avatar-max-width: 140px;
+
+  /* Fonts for different elements */
+  --font-family: sans-serif;
+  --font-family-header: sans-serif;
+  --font-family-list: monospace;
+
+  /* Colors you'll see cascade through the elements */
+
+  /* To set your own use custom-theme.css with `custom-theme` in settings.json `theme` property */
+  --color-bg: #e9e9e9; /* Used for the page body background */
+  --color-bg-alt: #FFFFFF; /* Used for social icons on hover */
+  --color-text-main: #000000; /* List text ann social icons on hover */
+  --color-primary: #FFFFFF; /* Headers and borders */
+  --color-alt: #0401C1;
+ 
+  /* Accent Colors */
+  --qtfarty-green: #90ff00;
+  --qtfarty-violet: #9624FE;
+  --qtfarty-blue: #0401C1;
+  --qtfarty-yellow: #DDff00;
+
+  
+  /* These are some Glitch colors you are welcome to use! */
+  --glitch-blue: #2800FF;
+  --glitch-blue-light: #5A78FF;
+  --glitch-pink: #FF7698;
+  --glitch-pink-light: #FEC1EE;
+  --glitch-green: #05F293;
+  --glitch-green-light: #9BE7D8;
+  --glitch-yellow: #FFFF60;
+  --glitch-purple: #9480FF;
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Page structure */
+body {
+  font-family: var(--font-family);
+  background-color: var(--qtfarty-yellow);
+  /*background-image: url('https://cdn.glitch.me/7d58f7c1-ede5-4a5f-97bd-dc92c1a902c1%2Fnorthern-flicker.png?v=1637000535491');*/
+    background-size: 250px;
+    background-repeat: repeat;
+padding-top: 80px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.wrapper {
+  min-height: var(--wrapper-height);
+  place-items: center;
+/*   margin: 3rem 2rem 0; */
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  margin: 0 auto 80px auto ;
+  background-color: var(--color-bg);
+    padding: 20px;
+    border-radius: 0px;
+    border: 1px solid var(--qtfarty-blue);
+  box-shadow: 10px 10px 0px 0px var(--color-alt);
+  border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+}
+
+.content p.profile .wb-icon{
+  line-height:1;
+
+}
+.content p.profile{  margin-bottom: 40px;}
+
+
+/* The footer and our remix on glitch button */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+/*   border-top: 4px solid #fff; */
+  background-color: transparent;
+    color:var(--qtfarty-green);
+  border-radius: 0px;
+  border: 1px solid var(--qtfarty-green);
+  max-width: 550px;
+}
+.footer a:hover {
+/*   background: var(--color-primary); */
+}
+.footer .tagline {
+  padding: 0.25rem 1rem 1rem;
+  text-align: left;
+  white-space: nowrap;
+}
+.btn--remix {
+  font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
+  padding: 0.8rem 1.75rem;
+  font-size: 0.95rem;
+  line-height: 1rem;
+  font-weight: 500;
+  height: 3rem;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid var(--qtfarty-green);
+  box-sizing: border-box;
+  border-radius: 0px;
+  text-decoration: none;
+  color: var(--qtfarty-green);
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: 1rem;
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFGmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDYgNzkuMTY0NjQ4LCAyMDIxLzAxLzEyLTE1OjUyOjI5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjIuMiAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjEtMDMtMDRUMTY6Mzc6NDUtMDU6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIxLTAzLTA0VDE2OjM5OjMyLTA1OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIxLTAzLTA0VDE2OjM5OjMyLTA1OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjkwZDMzNzUzLTAwOGEtNDE1NS04MTc1LTIwZjkwZWYxOTdiYyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5MGQzMzc1My0wMDhhLTQxNTUtODE3NS0yMGY5MGVmMTk3YmMiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5MGQzMzc1My0wMDhhLTQxNTUtODE3NS0yMGY5MGVmMTk3YmMiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjkwZDMzNzUzLTAwOGEtNDE1NS04MTc1LTIwZjkwZWYxOTdiYyIgc3RFdnQ6d2hlbj0iMjAyMS0wMy0wNFQxNjozNzo0NS0wNTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjIgKE1hY2ludG9zaCkiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/umE5AAAAHJJREFUOI3NlEEOwCAIBN3G/3+ZHpptCJEqhhL3pgiMgEJEpG0IAEb7106wL3WVMeTIm1nSdMLzA/b5kUd2GMq6vBwQwNIk1NWQNbNUXJfN4bTLUdJ6QmZWJNbetD2d8E1n/0XvJXikdP+PMCrvp08nvAEeozA6rI9ZhQAAAABJRU5ErkJggg==), auto;
+}
+.btn--remix img {
+  position: relative;
+  top: 1px;
+  margin-right: 0.25rem;
+}
+.btn--remix:hover {
+/*   background-color: #D0FFF1; */
+}
+
+/* Typography */
+p {
+  margin: 0 0 1rem 0;
+  line-height: 1.5 !important;
+  font-size: 1rem;
+  color:var(--qtfarty-blue);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2rem 0 0.8rem;
+  font-family: var(--font-family-header);
+  font-weight: bold;
+  line-height: 1.1;
+  color: var(--qtfarty-blue);
+}
+h1 {
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+}
+ul > li,
+ol > li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+ul {
+  padding: 0 0 0 18px;
+  margin: 0;
+}
+
+/* Link styles */
+a:not(.btn--remix):link,
+a:not(.btn--remix):visited {
+  text-decoration: none;
+/*   border-bottom: 6px solid var(--color-primary); */
+  color: inherit;
+  transition: background 0.2s linear;
+}
+a:hover {
+/*   background: var(--color-primary); */
+}
+/******************************************************************************
+END Page structure and element resets
+******************************************************************************/
+
+/******************************************************************************
+START Glitch in Bio default theme
+
+You can create your own CSS file in public/styles/themes
+Select your chosen CSS by adding the theme name (e.g. glitch) in settings.json
+******************************************************************************/
+
+/* Image specified in settings.json avatarImage property */
+.avatar-container {
+  display: flex;
+  justify-content: center;
+}
+.avatar {
+  max-width: var(--avatar-max-width);
+  max-height: var(--avatar-max-width);
+  margin: 1rem 0 1.5rem;
+  border-radius: 50%;
+  box-shadow: 10px 10px 0px 0px var(--color-alt);
+}
+
+/* Link list content specified in settings.json links array */
+ul.link-list {
+  margin: 0.5em 0 2.5rem;
+  padding-left: 0px;
+}
+ul.link-list li {
+  font-family: var(--font-family-list);
+  font-weight: 100;
+  list-style: none;
+  clear: both;
+  width: 100%;
+  min-width: 100%;
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 0.9em;
+    border-radius: 5px;
+/*   overflow: hidden; */
+}
+ul.link-list li a {
+  min-height: 5.5em;
+  min-width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+/*   background-color: var(--color-primary); */
+}
+
+
+ul.link-list li:nth-child(even) {
+  background-color: var(--qtfarty-green);
+  color: var(--qtfarty-blue);
+}
+
+ul.link-list li:nth-child(odd) {
+  background-color: var(--qtfarty-violet);
+  color: var(--color-bg-alt);
+}
+
+ul.link-list li:nth-child(3n+3) {
+  background-color: var(--qtfarty-yellow);
+  color: var(--qtfarty-violet);
+}
+
+
+ul.link-list li a:link,
+ul.link-list li a:visited {
+  text-align: center;
+/*   border: 2px solid var(--color-primary); */
+  padding: 1.5rem;
+  position: relative;
+}
+ul.link-list li a img {
+  z-index: 1;
+  aspect-ratio: 1 / 1;
+  height: 3em;
+  object-fit: cover;
+  overflow: hidden;
+}
+ul.link-list li a span {
+/*   z-index: 2; */
+/*   padding-left: 1rem; */
+/*   padding-right: 1rem; */
+  text-align: left;
+  padding-right: 10px;
+}
+
+/* Social media icons */
+/* Page will display all icons that have a value in settings.json social object */
+.social-icons {
+  justify-content: center;
+}
+.social-icons a:link {
+  border-bottom: none;
+  background: transparent;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 0.5rem 1.5rem;
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFGmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDYgNzkuMTY0NjQ4LCAyMDIxLzAxLzEyLTE1OjUyOjI5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjIuMiAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjEtMDMtMDRUMTY6Mzc6NDUtMDU6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIxLTAzLTA0VDE2OjM5OjMyLTA1OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIxLTAzLTA0VDE2OjM5OjMyLTA1OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjkwZDMzNzUzLTAwOGEtNDE1NS04MTc1LTIwZjkwZWYxOTdiYyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5MGQzMzc1My0wMDhhLTQxNTUtODE3NS0yMGY5MGVmMTk3YmMiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5MGQzMzc1My0wMDhhLTQxNTUtODE3NS0yMGY5MGVmMTk3YmMiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjkwZDMzNzUzLTAwOGEtNDE1NS04MTc1LTIwZjkwZWYxOTdiYyIgc3RFdnQ6d2hlbj0iMjAyMS0wMy0wNFQxNjozNzo0NS0wNTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjIgKE1hY2ludG9zaCkiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/umE5AAAAHJJREFUOI3NlEEOwCAIBN3G/3+ZHpptCJEqhhL3pgiMgEJEpG0IAEb7106wL3WVMeTIm1nSdMLzA/b5kUd2GMq6vBwQwNIk1NWQNbNUXJfN4bTLUdJ6QmZWJNbetD2d8E1n/0XvJXikdP+PMCrvp08nvAEeozA6rI9ZhQAAAABJRU5ErkJggg==), auto;
+}
+.social-profile-icon {
+  width: 40px;
+  margin-bottom: 1rem;
+  display: inline-flex;
+}
+/* Image paths specified in layout/social.html */
+.social-profile-icon path {
+  fill: var(--color-bg)!important;
+}
+.social-profile-icon path:hover {
+  fill: var(--color-text-main);
+}
+
+.social-profile-icon {
+  background-color: var(--qtfarty-blue)!important;
+  border-radius: 10px;
+}
+
+li:hover {
+  transform: translateY(-2px);
+}
+
+li:active {
+  transform: translateY(0px);
+}
+
+
+/* Video aspect ratio helper */
+.video-wrapper__16-9 iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+/******************************************************************************
+END Glitch in Bio default theme
+******************************************************************************/

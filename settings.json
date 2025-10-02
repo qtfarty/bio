@@ -1,0 +1,71 @@
+{
+  "metaTitle": "＠QTfarty by キューティーファーティー",
+  "metaDescription": "＠QTfarty's Links",
+  "name": " ＠QTfarty",
+  "theme": "glitch",
+  "avatarImage": "https://cdn.glitch.global/564603bd-290b-463e-a22c-51a8b8c2ac9f/profile.jpg",
+  "links": [
+   {
+      "url": "https://ko-fi.com/qtfarty",
+      "text": "Ko-fi (Shops and Membership)",
+      "wb": "c",
+      "img":""
+    },
+   {
+      "url": "https://qtfarty.fanbox.cc",
+      "text": "Fanbox (サポーターさん募集中🫶)",
+      "wb": "w",
+      "img":""
+    },  
+    {
+      "url": "https://pixiv.net/users/9659269",
+      "text": "Pixiv (絵と漫画)",
+      "wb": "g",
+      "img":""
+    },
+                        {
+      "url": "https://qtfarty.booth.pm/",
+      "text": "Booth (本・グッズ・無料ダウンロード)",
+      "wb": "¥",
+      "img":""
+    },
+                            {
+      "url": "https://qtfarty.omg.lol/now",
+      "text": "My /now page (近況ボード) ",
+      "wb": "j",
+      "img":""
+    },
+                {
+      "url": "http://qtfarty.url.lol/tou",
+      "text": "Terms of Usage of My Work / 作品引用・転載・保存・利用について",
+      "wb": "΄",
+      "img":""
+    },
+                {
+      "url": "https://wavebox.me/wave/eh2afjiu2px5wlgf/",
+      "text": "📮おたより箱",
+      "wb": "Ç",
+      "img":""
+    }
+  ],
+  "social": {
+    "glitch": "",
+    "spotify": "",
+    "substack": "",
+    "dev": "",
+    "facebook": "",
+    "github": "",
+    "instagram": "https://instagram.com/qtfarty",
+    "pixiv": "https://pixiv.me/qtfarty",
+    "linkedin": "",
+    "medium": "",
+    "patreon": "",
+    "tumblr": "https://qtfarty.tumblr.com", 
+    "pinterest": "",
+    "twitter": "https://twitter.com/qtfarty",
+    "threads": "https://www.threads.net/@qtfarty",
+    "youtube": "https://www.youtube.com/channel/UC7NEvw_lEjMMIdMfL4Ev8gw",
+    "twitch": "",
+    "email": ""
+  }
+}
