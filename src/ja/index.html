@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    {{> head-first }}
+    <title>{{ settings.metaTitle.ja }}</title>
+    <!-- Localized OpenGraph/Social sharing -->
+    <meta name="description" content="{{ settings.metaDescription.ja }}" />
+    {{> head-last }}
+    <link rel="stylesheet" type="text/css" href="/styles/themes/{{settings.theme}}.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="content">
+          {{> avatar }}
+          <div class="profile">
+            {{#if settings.pronoun}}<p class="bioline">{{#if settings.pronounIcon}}<span class="wb-icon">{{ settings.pronounIcon }}</span>{{/if}}{{{ settings.pronoun.ja }}}</p>{{/if}}
+            {{#if settings.description}}<p class="bioline">{{#if settings.descriptionIcon}}<span class="wb-icon">{{ settings.descriptionIcon }}</span>{{/if}}{{ settings.description.ja }}</p>{{/if}}
+          </div>
+          {{> featured-ja }}
+          {{#if settings.links.ja}}
+          <ul class="link-list">
+            {{#each settings.links.ja}}
+            <li class="{{hostasclass this.url}}"><a href="{{ this.url }}">{{#if this.img}}<img src="{{ this.img }}" alt="" />{{/if}}<span>{{ this.text }}</span><span class='wb-icon'>{{ this.wb }}</span></a></li>
+            {{/each}}
+          </ul>
+          {{/if}}
+          {{> social }}
+        </div>
+      </div>
+    </main>
+    {{> footer }}
+  </body>
+</html>
+

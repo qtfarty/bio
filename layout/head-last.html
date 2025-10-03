@@ -1,0 +1,22 @@
+<!-- OpenGraph/Social sharing -->
+<meta property="og:image" content="{{ settings.avatarImage }}" />
+<meta name="twitter:card" content="summary" />
+<link rel="icon" href="/assets/profile.jpg" />
+<link rel="stylesheet" type="text/css" href="/styles/style.css" />
+<!--PWA requirements-->
+<meta name="theme-color" content="#9480FF"/>
+<link rel="apple-touch-icon" href="/assets/profile.jpg">
+
+<!-- PWA setup - update public/sw.js if you add your own assets like a new .css file -->
+<link rel="manifest" href="/manifest.json">
+<script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+    .then(reg => console.log('Service Worker registered', reg))
+    .catch(err => console.error('Service Worker **not** registered', err));
+}
+else {
+  console.warn('Service Worker not supported in this browser');
+}
+</script>
+

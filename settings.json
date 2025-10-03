@@ -1,71 +1,129 @@
 {
-  "metaTitle": "＠QTfarty by キューティーファーティー",
-  "metaDescription": "＠QTfarty's Links",
-  "name": " ＠QTfarty",
+  "metaTitle": {
+    "en": "@QTfarty",
+    "ja": "＠QTfarty（キューティーファーティー）"
+  },
+  "metaDescription": {
+    "en": "@QTfarty's Links",
+    "ja": "＠QTfartyのリンク集"
+  },
+  "name": "@QTfarty",
   "theme": "glitch",
-  "avatarImage": "https://cdn.glitch.global/564603bd-290b-463e-a22c-51a8b8c2ac9f/profile.jpg",
-  "links": [
-   {
-      "url": "https://ko-fi.com/qtfarty",
-      "text": "Ko-fi (Shops and Membership)",
-      "wb": "c",
-      "img":""
-    },
-   {
-      "url": "https://qtfarty.fanbox.cc",
-      "text": "Fanbox (サポーターさん募集中🫶)",
-      "wb": "w",
-      "img":""
-    },  
-    {
-      "url": "https://pixiv.net/users/9659269",
-      "text": "Pixiv (絵と漫画)",
-      "wb": "g",
-      "img":""
-    },
-                        {
-      "url": "https://qtfarty.booth.pm/",
-      "text": "Booth (本・グッズ・無料ダウンロード)",
-      "wb": "¥",
-      "img":""
-    },
-                            {
-      "url": "https://qtfarty.omg.lol/now",
-      "text": "My /now page (近況ボード) ",
-      "wb": "j",
-      "img":""
-    },
-                {
-      "url": "http://qtfarty.url.lol/tou",
-      "text": "Terms of Usage of My Work / 作品引用・転載・保存・利用について",
-      "wb": "΄",
-      "img":""
-    },
-                {
-      "url": "https://wavebox.me/wave/eh2afjiu2px5wlgf/",
-      "text": "📮おたより箱",
-      "wb": "Ç",
-      "img":""
-    }
-  ],
+  "avatarImage": "/assets/profile.jpg",
+  "pronounIcon": "°",
+  "pronoun": {
+    "en": "[kjúːti fɑ́ːrti] <a href=\"https://en.pronouns.page/:QT\">QT/QT's</a>, <a href=\"https://en.pronouns.page/any\">ANY</a> (spoken), <a href=\"https://en.pronouns.page/are/they/them\">They/Them</a> (written)",
+    "ja": "読み方：きゅーてぃーふぁーてぃ"
+  },
+  "descriptionIcon": ".",
+  "description": {
+    "en": "I’m just a gorilla who loves drawing🦍",
+    "ja": "ユーラシア大陸のえをかくごりら🦍"
+  },
+  "links": {
+    "en": [
+      {
+        "url": "https://ko-fi.com/qtfarty",
+        "text": "Ko-fi (Shop & Membership)",
+        "wb": "?",
+        "img": ""
+      },
+      {
+        "url": "https://tapas.io/qtfarty",
+        "text": "Tapas.io (Award-Winning Comics)",
+        "wb": "I",
+        "img": ""
+      },
+      {
+        "url": "https://cobraanaconda.tumblr.com",
+        "text": "Kobra Anaconda (Omegaverse SF Series)",
+        "wb": "l",
+        "img": ""
+      },
+      {
+        "url": "https://qtfarty.tumblr.com/ask",
+        "text": "A.M.A. (Ask me anything)",
+        "wb": "Ç",
+        "img": ""
+      },
+      {
+        "url": "https://qtfarty.omg.lol/now",
+        "text": "”Now” page",
+        "wb": "O",
+        "img": ""
+      },
+      {
+        "url": "http://qtfarty.url.lol/tou",
+        "text": "Terms of Usage of My Work",
+        "wb": "΄",
+        "img": ""
+      }
+    ],
+    "ja": [
+      {
+        "url": "https://qtfarty.fanbox.cc",
+        "text": "Fanbox (サポーターさん募集中🫶)",
+        "wb": "w",
+        "img": ""
+      },
+      {
+        "url": "https://pixiv.net/users/9659269",
+        "text": "Pixiv (絵と漫画)",
+        "wb": "g",
+        "img": ""
+      },
+      {
+        "url": "https://qtfarty.booth.pm/",
+        "text": "Booth (本・グッズ・無料ダウンロード)",
+        "wb": "¥",
+        "img": ""
+      },
+      {
+        "url": "https://profile.omg.lol/qtfarty",
+        "text": "詳細プロフ",
+        "wb": "i",
+        "img": ""
+      },
+      {
+        "url": "https://wavebox.me/wave/eh2afjiu2px5wlgf/",
+        "text": "📮おたより箱",
+        "wb": "Ç",
+        "img": ""
+      },
+      {
+        "url": "http://qtfarty.url.lol/tou",
+        "text": "作品引用・転載・保存・利用について",
+        "wb": "΄",
+        "img": ""
+      }
+    ]
+  },
   "social": {
     "glitch": "",
     "spotify": "",
     "substack": "",
     "dev": "",
     "facebook": "",
-    "github": "",
+    "github": "https://github.com/qtfarty",
     "instagram": "https://instagram.com/qtfarty",
     "pixiv": "https://pixiv.me/qtfarty",
     "linkedin": "",
     "medium": "",
     "patreon": "",
-    "tumblr": "https://qtfarty.tumblr.com", 
+    "tumblr": "https://qtfarty.tumblr.com",
     "pinterest": "",
-    "twitter": "https://twitter.com/qtfarty",
+    "twitter": {
+      "default": "https://x.com/realqtfarty",
+      "en": "https://x.com/realqtfarty",
+      "ja": "https://x.com/qtfarty"
+    },
     "threads": "https://www.threads.net/@qtfarty",
     "youtube": "https://www.youtube.com/channel/UC7NEvw_lEjMMIdMfL4Ev8gw",
     "twitch": "",
     "email": ""
-  }
+  },
+  "licenseName": "©︎ @QTfarty",
+  "licenseUrl": "",
+  "sourceUrl": "https://github.com/qtfarty/bio",
+  "lastUpdated": "2025-10-03T03:50:00+02:00"
 }

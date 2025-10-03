@@ -4,7 +4,9 @@
   "description": "Your very own link-in-bio app.",
   "main": "index.html",
   "scripts": {
+    "prestart": "node scripts/update-last-updated.js",
     "start": "vite",
+    "prebuild": "node scripts/update-last-updated.js",
     "build": "vite build",
     "serve": "vite preview"
   },

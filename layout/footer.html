@@ -1,0 +1,26 @@
+<footer class="footer">
+  <p class="lang-toggle">
+    <span class="prefix">🌐</span>
+    <a href="/"> English</a> | <a href="/ja/">🇯🇵日本語</a>
+  </p>
+  <p class="info">
+    {{#if settings.licenseUrl}}<a href="{{ settings.licenseUrl }}" rel="license" target="_blank">{{ settings.licenseName }}</a>{{/if}} 
+    {{#unless settings.licenseUrl}}{{#if settings.licenseName}}{{ settings.licenseName }}{{/if}}{{/unless}} |
+    {{#if settings.sourceUrl}} <a href="{{ settings.sourceUrl }}" target="_blank">Source code</a>{{/if}} |
+    <span
+      id="lastUpdatedLabel"
+      data-label-en="Last updated"
+      data-label-ja="最終更新"
+    >
+      Last updated
+    </span>:
+    <span
+      id="lastUpdated"
+      data-last-updated="{{ settings.lastUpdated }}"
+    >
+      {{ settings.lastUpdated }}
+    </span>
+  </p>
+</footer>
+<script defer src="/scripts/social.js"></script>
+<script defer src="/scripts/footer-last-updated.js"></script>

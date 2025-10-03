@@ -6,3 +6,8 @@ web_modules
 .pm2
 .snowpack
 build
+src/.DS_Store
+src/public/.DS_Store
+src/public/styles/.DS_Store
+styles/.DS_Store
+.DS_Store

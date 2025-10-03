@@ -94,26 +94,58 @@ border-top-right-radius: 50px;
   line-height:1;
 
 }
-.content p.profile{  margin-bottom: 40px;}
-
+div.profile{
+  margin: 0 0 1rem 0;
+}
+p.bioline {
+  margin:0;
+  line-height: 1.3;
+}
 
 /* The footer and our remix on glitch button */
 .footer {
   display: flex;
   justify-content: space-between;
-  margin: 1rem auto 0;
-  padding: 1rem 0 0.75rem 0;
+  margin: 0 auto;
+  padding:0;
   width: 100%;
   flex-wrap: wrap;
 /*   border-top: 4px solid #fff; */
   background-color: transparent;
-    color:var(--qtfarty-green);
+  color: var(--qtfarty-blue);
   border-radius: 0px;
-  border: 1px solid var(--qtfarty-green);
+  border: 0;
   max-width: 550px;
 }
 .footer a:hover {
 /*   background: var(--color-primary); */
+}
+.footer .lang-toggle {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--qtfarty-blue);
+  margin: 0.5rem 0;
+  width: 100%;
+}
+.footer .lang-toggle a {
+  text-decoration: none;
+  border: 0;
+  color: var(--qtfarty-blue);
+}
+.footer .legal {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--qtfarty-blue);
+  margin: 0.25rem 0 0.5rem;
+  width: 100%;
+}
+.footer .legal a { color: var(--qtfarty-blue); text-decoration: none; border: 0; }
+.footer .info{
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--qtfarty-blue);
+  margin: 0 0 0.5rem;
+  width: 100%;
 }
 .footer .tagline {
   padding: 0.25rem 1rem 1rem;
@@ -152,7 +184,7 @@ border-top-right-radius: 50px;
 /* Typography */
 p {
   margin: 0 0 1rem 0;
-  line-height: 1.5 !important;
+  line-height: 1.5;
   font-size: 1rem;
   color:var(--qtfarty-blue);
 }
@@ -222,7 +254,7 @@ Select your chosen CSS by adding the theme name (e.g. glitch) in settings.json
 
 /* Link list content specified in settings.json links array */
 ul.link-list {
-  margin: 0.5em 0 2.5rem;
+  margin: 0.5em 0 1.5rem;
   padding-left: 0px;
 }
 ul.link-list li {
@@ -291,6 +323,7 @@ ul.link-list li a span {
 /* Page will display all icons that have a value in settings.json social object */
 .social-icons {
   justify-content: center;
+  margin: 0 0 2.5rem;
 }
 .social-icons a:link {
   border-bottom: none;

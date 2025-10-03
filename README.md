@@ -1,18 +1,36 @@
+# Project overview
+A customized version of “Glitch in Bio” with a simple bilingual setup (English and Japanese).
 
-# customization note
-### Originally Remixed From
-https://glitch.com/~alexlinks
+## Origin
+Based on the original remix: https://glitch.com/~alexlinks
 
-### Some Features I want to add
-3. I'm working on an RSS extension to show the titles/links of my blog's latest links. It's commmented out at the moment, but to start it up I:
-* added `rss.html` to ``/layout/extensions`
-* added `rss-parser` to npm dependencies in `package.json`
-* updated `vite.config.js` to parse the RSS feed
+## What’s customized here
+- Multilingual content sourced from `settings.json` using nested keys: `{ en, ja }`.
+- Two static entry pages:
+  - English (default): `/` → `src/index.html`
+  - Japanese: `/ja/` → `src/ja/index.html`
+- Language switch: a footer link toggles between `/` and `/ja/`.
+- Shared layout partials remain in `layout/` (avatar, social, etc.). Only head metadata is duplicated for JA (`layout/head-ja.html`).
 
+## How to customize
+- Edit `settings.json`:
+  - `name.en` / `name.ja`
+  - `pronoun.en` / `pronoun.ja` (HTML allowed)
+  - `description.en` / `description.ja`
+  - `links.en[]` / `links.ja[]` (each item: `{ url, text, wb, img }`)
+  - `theme`: `glitch`, `gallery`, `menu`, or your own
+- Styles: update `/public/styles/style.css` or add a custom theme in `/public/styles/themes/` and set its name in `settings.json`.
 
-----original glitch in bio
+## Related Services
 
-# Glitch in Bio!
+This site uses a Cloudflare Worker for automatic language-based redirection:
+
+- [Language Redirector Worker](https://github.com/qtfarty/bio-lang-switcher)
+
+The Worker detects the visitor’s browser language and (once per day) redirects Japanese users to `/ja/`.  
+See the Worker repository above for details.
+
+# Original Glitch in Bio Read me
 
 Your links, your way. A link-in-bio app you can customize any way you want.
 

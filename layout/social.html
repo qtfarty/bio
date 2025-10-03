@@ -251,9 +251,13 @@
     <!-- ==================== -->
     <!-- Twitter -->
     {{#if settings.social.twitter}}
+    <!-- Keep this href for visitors without JavaScript; per-language URLs are provided via data attributes -->
     <a
       aria-label="{{settings.name}} on Twitter"
-      href="{{settings.social.twitter}}"
+      class="js-twitter-link"
+      href="{{settings.social.twitter.default}}"
+      data-twitter-en="{{settings.social.twitter.en}}"
+      data-twitter-ja="{{settings.social.twitter.ja}}"
     >
       <svg
         class="social-profile-icon"

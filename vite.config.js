@@ -25,6 +25,7 @@ export default defineConfig(async ({ command, mode }) => {
       rollupOptions: {
         input: {
           main: resolve(root, "index.html"),
+          ja: resolve(root, "ja", "index.html"),
           now: resolve(root, "now", "index.html")
         },
       },

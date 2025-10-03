@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{{ settings.metaTitle }}</title>
-    
-    {{> head }}
-    
+    {{> head-first }}
+    <title>{{ settings.metaTitle.en }}</title>
+    <!-- Localized OpenGraph/Social sharing -->
+    <meta name="description" content="{{ settings.metaDescription.en }}" />
+    {{> head-last }}
     <!--- THEMES: in settings.json change 'glitch' to 'gallery', 'menu', or any other theme in the layout/themes folder --->
     <link rel="stylesheet" type="text/css" href="/styles/themes/{{settings.theme}}.css" />
   
@@ -19,36 +20,24 @@
     <main>
       <div class="wrapper">
         <div class="content">
-          
-          {{> avatar }} 
-          {{> name }}
-          <p class="profile">
-            <span class="wb-icon">°</span>キューティファーティ[kjúːti fɑ́ːrti] <a href="https://en.pronouns.page/:QT">(QT/QT's)</a><br>
-            <span class="wb-icon">.</span>ユーラシア大陸のえをかくごりら / I'm a gorilla that draws 🦍
-          </p>
-          
-          <!--- NEXT STEPS: Want to add a bio or some text? Just add a <p> here:
-          <p>
-            Put anything you like here!
-          </p>
-          --->
-
-          <!--- NEXT STEPS: Easy, responsive YouTube/iframe embeds? We've got a helper for that:
-          <div class="video-wrapper__16-9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GSP0b85BKmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          {{> featured }}
+          {{> avatar }}
+          <div class="profile">
+            {{#if settings.pronoun}}<p class="bioline">{{#if settings.pronounIcon}}<span class="wb-icon">{{ settings.pronounIcon }}</span>{{/if}}{{{ settings.pronoun.en }}}</p>{{/if}}
+            {{#if settings.description}}<p class="bioline">{{#if settings.descriptionIcon}}<span class="wb-icon">{{ settings.descriptionIcon }}</span>{{/if}}{{ settings.description.en }}</p>{{/if}}
           </div>
-          --->
-          
+          {{> featured }}
+          {{#if settings.links.en}}
+          <ul class="link-list">
+            {{#each settings.links.en}}
+            <li class="{{hostasclass this.url}}"><a href="{{ this.url }}">{{#if this.img}}<img src="{{ this.img }}" alt="" />{{/if}}<span>{{ this.text }}</span><span class='wb-icon'>{{ this.wb }}</span></a></li>
+            {{/each}}
+          </ul>
+          {{/if}}
           {{> social }}
- 
-          {{> links }} 
-
-
         </div>
       </div>
-      
-      <!--- FOOTER: You can safely remove the Glitch footer (but tell your friends!) ✂ 
-      {{> glitch-footer }} --->
     </main>
+    {{> footer }}
   </body>
 </html>
