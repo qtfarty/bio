@@ -34,10 +34,10 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Copy everything from src into build (preserve structure)
-        run: cp -r src/* build/
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Copy everything from src into build EXCEPT index.html
+        run: rsync -r --exclude='index.html' src/ build/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
