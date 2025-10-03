@@ -3,13 +3,7 @@
 ### Originally Remixed From
 https://glitch.com/~alexlinks
 
-### Some Features Added from
-Jenn's Glitch in Bio!
-
-Here are a list of customizations I've made, in case you're wondering how I got my Glitch-in-bio to look like this!
-
-1. I have a custom theme called `livelaughlove` whose code can be found in `public/styles/themes/livelaughlove.css`.
-2. I added `<script src="https://long-cat-cursor.glitch.me/script.js" defer></script>` to the head of `index.html` to add my [~long-cat-cursor](https://long-cat-cursor.glitch.me) to the page if it's not a touch device. But then I removed it because it got annoying lol. Anyway, you should try it too!
+### Some Features I want to add
 3. I'm working on an RSS extension to show the titles/links of my blog's latest links. It's commmented out at the moment, but to start it up I:
 * added `rss.html` to ``/layout/extensions`
 * added `rss-parser` to npm dependencies in `package.json`
