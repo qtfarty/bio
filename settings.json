@@ -47,7 +47,7 @@
         "img": ""
       },
       {
-        "url": "https://qtfarty.omg.lol/now",
+        "url": "/now.html",
         "text": "”Now” page",
         "wb": "O",
         "img": ""
@@ -62,7 +62,7 @@
     "ja": [
       {
         "url": "https://qtfarty.fanbox.cc",
-        "text": "Fanbox (サポーターさん募集中🫶)",
+        "text": "Fanbox (支援者さん募集中🫶)",
         "wb": "w",
         "img": ""
       },
@@ -125,5 +125,5 @@
   "licenseName": "©︎ @QTfarty",
   "licenseUrl": "",
   "sourceUrl": "https://github.com/qtfarty/bio",
-  "lastUpdated": "2025-10-03T03:50:00+02:00"
+  "lastUpdated": "2025-10-03T22:14:06+02:00"
 }

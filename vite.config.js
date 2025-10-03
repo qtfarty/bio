@@ -12,7 +12,13 @@ export default defineConfig(async ({ command, mode }) => {
         partialDirectory: resolve(__dirname, "layout"),
         settingsFile: "settings.json",
         helpers: {
-          hostasclass: (value) => new URL(value).hostname.replace(/\./g, "_"),
+          hostasclass: (value) => {
+            try {
+              return new URL(value, "http://localhost").hostname.replace(/\./g, "_");
+            } catch (error) {
+              return String(value).replace(/\W+/g, "_");
+            }
+          },
         },
         reloadOnPartialChange: true,
       }),
@@ -26,7 +32,7 @@ export default defineConfig(async ({ command, mode }) => {
         input: {
           main: resolve(root, "index.html"),
           ja: resolve(root, "ja", "index.html"),
-          now: resolve(root, "now", "index.html")
+          now: resolve(root, "now.html"),
         },
       },
     },
