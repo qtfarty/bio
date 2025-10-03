@@ -1,7 +1,6 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
 import handlebars from "@glitchdotcom/vite-plugin-handlebars";
-import fs from "fs";
 
 const root = resolve(__dirname, "src");
 const outDir = resolve(__dirname, "build");
