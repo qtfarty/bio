@@ -41,8 +41,8 @@ jobs:
         run: npm run build
       - name: Copy static assets
         run: |
-          cp -r src/public/* build/ 2>/dev/null || true
-          cp -r src/now build/ 2>/dev/null || true
+          cp -r src/public build/
+          cp -r src/now build/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
