@@ -17,3 +17,4 @@ styles/.DS_Store
 .env
 Thumbs.db
 *.swp
+bio.code-workspace

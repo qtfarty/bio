@@ -30,7 +30,7 @@
       },
       {
         "url": "https://tapas.io/qtfarty",
-        "text": "Tapas.io (Award-Winning Comics)",
+        "text": "Tapas.io (Prize-Winning Comics)",
         "wb": "I",
         "img": ""
       },
@@ -48,7 +48,7 @@
       },
       {
         "url": "/now.html",
-        "text": "”Now” page",
+        "text": "/Now page",
         "wb": "O",
         "img": ""
       },
@@ -104,7 +104,8 @@
     "substack": "",
     "dev": "",
     "facebook": "",
-    "github": "https://github.com/qtfarty",
+    "github": "",
+    "github_bak": "https://github.com/qtfarty(戻したい時にこの括弧と_bakを消して使ってね)",
     "instagram": "https://instagram.com/qtfarty",
     "pixiv": "https://pixiv.me/qtfarty",
     "linkedin": "",
@@ -118,6 +119,8 @@
       "ja": "https://x.com/qtfarty"
     },
     "threads": "https://www.threads.net/@qtfarty",
+    "bluesky": "https://bsky.app/profile/qtfarty.bsky.social",
+    "mastodon": "https://social.lol/@qtfarty",
     "youtube": "https://www.youtube.com/channel/UC7NEvw_lEjMMIdMfL4Ev8gw",
     "twitch": "",
     "email": ""
@@ -125,5 +128,5 @@
   "licenseName": "©︎ @QTfarty",
   "licenseUrl": "",
   "sourceUrl": "https://github.com/qtfarty/bio",
-  "lastUpdated": "2025-10-03T22:14:06+02:00"
+  "lastUpdated": "2025-10-03T22:44:02+02:00"
 }
